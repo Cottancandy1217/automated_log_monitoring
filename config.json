@@ -1,0 +1,23 @@
+{
+  "log_files": [
+    "/var/log/syslog",
+    "/var/log/nginx/error.log"
+  ],
+  "error_patterns": [
+    "error",
+    "failed",
+    "critical",
+    "Exception",
+    "\\[ERROR\\]",
+    "\\[CRITICAL\\]"
+  ],
+  "alert_recipients": [
+    "datacentertech@example.com",
+    "alerts@example.com"
+  ],
+  "smtp_server": "smtp.gmail.com",
+  "smtp_port": 587,
+  "smtp_user": "your_gmail_username@gmail.com",
+  "smtp_password": "your_gmail_password",
+  "alert_threshold_minutes": 15
+}
